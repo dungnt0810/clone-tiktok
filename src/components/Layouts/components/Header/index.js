@@ -10,6 +10,7 @@ import styles from './Header.module.scss';
 import images from '~/assets/img';
 import { wrapper as PropperWrapper } from '~/components/Propper';
 import AccountItem from '~/components/AccountItem';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -61,10 +62,8 @@ function Header() {
 
                 {/* Action Area */}
                 <div className={cx('action')}>
-                    <button className={cx('upload')}>{/* logo upload */}</button>
-                    <button className={cx('messgage')}></button>
-                    <button className={cx('inbox')}></button>
-                    <img className={cx('avatar')} alt="avatar" />
+                    <Button primary>Login</Button>
+                    <Button outline>Register</Button>
                 </div>
                 {/* Action Area */}
             </div>
